@@ -28,7 +28,13 @@ if(!isset($_SESSION['login_user'])){
                         <input type="submit" name="submit" value="上传">
                     </div>
                 </form>
+                <div style="padding-top: 50px">
+                    <p>上传你成功后，您可以使用这个地址，在微信、浏览器等地方，访问您的网页</p>
+                    <p style="padding-top: 20px;font-size: 20px;color: #f04f5b">http://dmt.clubunion.cn/<?php echo $_SESSION['login_user']?></p>
+                </div>
+
             </div>
+
         </div>
     </div>
 </body>

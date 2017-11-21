@@ -1,8 +1,9 @@
 <?php
 class dbHelper{
-    protected $_dsn = "mysql:host=localhost;dbname=iPreview";
-    protected $_name = "root";
-    protected $_pass = "bnuz";
+    //填上你自己的数据库信息
+    protected $_dsn = "mysql:HOST;dbname=DBNAME;port=PORT";
+    protected $_name = "USERNAME";
+    protected $_pass = "PASSWORD";
     protected $_condition = array();
     protected $pdo;
     protected $fetchAll;
@@ -207,13 +208,13 @@ class dbHelper{
      *process sucessful action
      */
     private function successful($params){
-        return "The ".$params." action is successful";
+        return true;
     }
     /**
      *process fail action
      */
     private function fail($params){
-        return "The ".$params." action is fail";
+        return false;
     }
     /**
      *process exception action
